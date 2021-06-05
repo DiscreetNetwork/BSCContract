@@ -577,7 +577,6 @@ contract Discreet is Context, IERC20, Ownable {
     }
  
     function endIDO() public onlyOwner() {
-        idoEndDate = now;
 	      burnTokens();
  
 	      addLiquidity();
